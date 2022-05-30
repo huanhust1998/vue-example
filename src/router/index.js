@@ -9,12 +9,17 @@ const routes = [
   {
     path: "/handling-user-input",
     name: "userInput",
-    component: () => import("../views/HandlingUserInput.vue"),
+    component: () => import("../views/HandlingUserInputView.vue"),
   },
   {
     path: "/attribute-binding",
     name: "attribute-binding",
-    component: () => import("../views/AttributeBinding.vue"),
+    component: () => import("../views/AttributeBindingView.vue"),
+  },
+  {
+    path: "/conditional-loop",
+    name: "conditional-loop",
+    component: () => import("../views/ConditionalLoopView.vue"),
   },
 ];
 
