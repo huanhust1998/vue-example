@@ -21,6 +21,11 @@ const routes = [
     name: "conditional-loop",
     component: () => import("../views/ConditionalLoopView.vue"),
   },
+  {
+    path: "/form-binding",
+    name: "form-binding",
+    component: () => import("../views/FormBindingView.vue"),
+  },
 ];
 
 const router = createRouter({
