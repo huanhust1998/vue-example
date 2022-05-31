@@ -4,42 +4,42 @@ const routes = [
   {
     path: "/basic",
     name: "basic",
-    component: () => import("../views/BasicView.vue"),
+    component: () => import("../views/basic/BasicView.vue"),
   },
   {
     path: "/practical",
     name: "practical",
-    component: () => import("../views/PracticalView.vue"),
+    component: () => import("../views/practical/PracticalView.vue"),
   },
   {
     path: "/hello-world",
     name: "helloWorld",
-    component: () => import("../views/HomeView.vue"),
+    component: () => import("../views/basic/HomeView.vue"),
   },
   {
     path: "/handling-user-input",
     name: "userInput",
-    component: () => import("../views/HandlingUserInputView.vue"),
+    component: () => import("../views/basic/HandlingUserInputView.vue"),
   },
   {
     path: "/attribute-binding",
     name: "attribute-binding",
-    component: () => import("../views/AttributeBindingView.vue"),
+    component: () => import("../views/basic/AttributeBindingView.vue"),
   },
   {
     path: "/conditional-loop",
     name: "conditional-loop",
-    component: () => import("../views/ConditionalLoopView.vue"),
+    component: () => import("../views/basic/ConditionalLoopView.vue"),
   },
   {
     path: "/form-binding",
     name: "form-binding",
-    component: () => import("../views/FormBindingView.vue"),
+    component: () => import("../views/basic/FormBindingView.vue"),
   },
   {
     path: "/simple-component",
     name: "simple-component",
-    component: () => import("../views/SimpleComponentView.vue"),
+    component: () => import("../views/basic/SimpleComponentView.vue"),
   },
 ];
 

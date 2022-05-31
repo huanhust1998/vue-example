@@ -1,5 +1,5 @@
 <script>
-import TodoItem from "../components/SimpleComponent.vue"
+import TodoItem from "../../components/SimpleComponent.vue"
 import BasicView from "./BasicView.vue"
 export default {
     components: {
