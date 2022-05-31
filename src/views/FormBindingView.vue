@@ -32,4 +32,31 @@ export default {
     <p>Checked names:
     <pre>{{ checkedNameList }}</pre>
     </p>
+
+    <h2>Radio</h2>
+    <input type="radio" id="one" value="One" v-model="picked">
+    <label for="One">One</label>
+    <input type="radio" id="two" value="Two" v-model="picked">
+    <label for="Two">Two</label>
+    <br>
+    <span>Picked: {{ picked }}</span>
+
+    <h2>Select</h2>
+    <select v-model="selected">
+        <option disabled value="">Please select one</option>
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+        <option>D</option>
+    </select>
+    <span>Selected: {{ selected }}</span>
+
+    <h2>Multi Select</h2>
+    <select v-model="multiSelectedList" multiple>
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+        <option>D</option>
+    </select>
+    <span>SelectedList: {{ multiSelectedList }}</span>
 </template>
