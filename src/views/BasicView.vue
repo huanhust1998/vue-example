@@ -5,7 +5,7 @@
         <router-link to="/attribute-binding">Attribute-binding</router-link> |
         <router-link to="/conditional-loop">Conditionals and Loop</router-link> |
         <router-link to="/form-binding">Form bindings</router-link> |
-        <router-link to="/simple-component">Simple Component</router-link> |
+        <router-link to="/simple-component">Simple Component</router-link>
     </nav>
     <router-view />
 </template>

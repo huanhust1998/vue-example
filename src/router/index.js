@@ -7,6 +7,11 @@ const routes = [
     component: () => import("../views/BasicView.vue"),
   },
   {
+    path: "/practical",
+    name: "practical",
+    component: () => import("../views/PracticalView.vue"),
+  },
+  {
     path: "/hello-world",
     name: "helloWorld",
     component: () => import("../views/HomeView.vue"),
