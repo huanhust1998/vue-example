@@ -1,15 +1,18 @@
 <script>
+import BasicView from './BasicView.vue'
 export default {
     data() {
         return {
             show: true,
             list: [1, 2, 3, 4, 5, 6]
-        }
-    }
+        };
+    },
+    components: { BasicView }
 }
 </script>
 
 <template>
+    <BasicView />
     <button @click="show = !show">Toggle List</button>
     <button @click="list.push(list.length + 1)">Push Number</button>
     <button @click="list.pop()">Pop Number</button>

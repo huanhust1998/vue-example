@@ -1,9 +1,10 @@
 <script>
+import BasicView from './BasicView.vue';
 export default {
     data() {
         return {
-            message: 'Hello World!'
-        }
+            message: "Hello World!"
+        };
     },
     methods: {
         reverseMessage() {
@@ -13,13 +14,15 @@ export default {
             this.message = this.message + "!";
         },
         notify() {
-            alert("Hello little friend!!")
+            alert("Hello little friend!!");
         }
-    }
+    },
+    components: { BasicView }
 }
 </script>
 
 <template>
+    <BasicView />
     <h1>{{ message }}</h1>
 
     <button @click="reverseMessage">Reverse Message</button>

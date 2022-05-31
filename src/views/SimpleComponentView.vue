@@ -1,8 +1,10 @@
 <script>
 import TodoItem from "../components/SimpleComponent.vue"
+import BasicView from "./BasicView.vue"
 export default {
     components: {
-        TodoItem
+        TodoItem,
+        BasicView
     },
     data() {
         return {
@@ -16,6 +18,7 @@ export default {
 }
 </script>
 <template>
+    <BasicView />
     <TodoItem v-for="item in groceryList" :todo="item" :key="item.id">
     </TodoItem>
 </template>

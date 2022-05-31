@@ -1,5 +1,9 @@
 <script>
+import BasicView from "./BasicView.vue"
 export default {
+    components: {
+        BasicView
+    },
     data() {
         return {
             message: "Hello World!",
@@ -19,6 +23,7 @@ export default {
 </script>
 
 <template>
+    <BasicView />
     <p>
         <span :title="message">
             Hover your mouse over me for a few seconds to see my dynamically bound title!

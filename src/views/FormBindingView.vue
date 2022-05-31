@@ -1,4 +1,5 @@
 <script>
+import BasicView from './BasicView.vue'
 export default {
     data() {
         return {
@@ -8,12 +9,14 @@ export default {
             picked: "One",
             selected: "A",
             multiSelectedList: ["A"]
-        }
-    }
+        };
+    },
+    components: { BasicView }
 }
 </script>
 
 <template>
+    <BasicView />
     <h3>Text input</h3>
     <input v-model="text">{{ text }}
 
