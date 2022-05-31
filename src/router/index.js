@@ -26,6 +26,11 @@ const routes = [
     name: "form-binding",
     component: () => import("../views/FormBindingView.vue"),
   },
+  {
+    path: "/simple-component",
+    name: "simple-component",
+    component: () => import("../views/SimpleComponentView.vue"),
+  },
 ];
 
 const router = createRouter({
